@@ -1,0 +1,28 @@
+import React from "react";
+import { Link } from "gatsby";
+import logoSimples from "../images/logo-xicara-cafe-claro.png";
+import whatsapp from "../images/whatsapp.png";
+import facebook from "../images/facebook.png";
+import instagram from "../images/instagram.png";
+import * as styles from "../styles/footer.module.css";
+
+const footer = () => {
+  return (
+    <div className={styles.footer}>
+      <Link to="/">
+        <img
+          className={styles.logo}
+          src={logoSimples}
+          alt="Logo xicara de café"
+        />
+      </Link>
+      <div className={styles.redesSociais}>
+        <div className={styles.circle}><img className={styles.itemRedeSocial} src={whatsapp} alt="Whatsapp" /></div>
+        <div className={styles.circle}><img className={styles.itemRedeSocial} src={facebook} alt="Facebook" /></div>
+        <div className={styles.circle}><img className={styles.itemRedeSocial} src={instagram} alt="Instagram" /></div>
+      </div>
+    </div>
+  );
+};
+
+export default footer;

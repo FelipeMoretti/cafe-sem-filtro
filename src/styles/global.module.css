@@ -1,0 +1,62 @@
+/* reset.css — Reset moderno e leve */
+
+/* Box sizing global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove margens padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Altura 100% no body e html */
+html, body {
+  height: 100%;
+}
+
+/* Fonte base */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+/* Remove estilos padrão de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove estilo padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Melhor reset de imagens */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove estilos padrão de form */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Evita zoom em dispositivos móveis */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Respeita o tamanho do container */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
