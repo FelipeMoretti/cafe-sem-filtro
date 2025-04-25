@@ -2,6 +2,7 @@ main{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #12141B;
 }
 
 .hero{
@@ -67,13 +68,136 @@ main{
     color: #E2DBB5;
     background-color: #12141B;
     padding: 6px;
-    border: 1px solid #E2DBB5;
+    border: 2px solid #E2DBB5;
     border-radius: 14px;
 }
 
 .experiencia{
     color: #E2DBB5;
     padding: 6px;
-    border: 1px solid #E2DBB5;
+    border: 2px solid #E2DBB5;
     border-radius: 14px;
+}
+
+.maisVendidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.tituloMaisVendidos{
+    color: white;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img{
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 16px;
+    overflow: hidden;
+    display: block;
+}
+
+.item p{
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.card{
+    background-color: #E2DBB5;
+    width: 10rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 16px;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.botaoComprar{
+    margin-top: 1rem;
+    background-color: #E2DBB5;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.informacoes{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 18rem;
+    background-color: #A26E4B;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.informacoes img{
+    width: 18rem;
+}
+
+.textoInformacoes{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    color: white;
+    padding: 0 5rem;
+    margin-bottom: 3rem;
+    gap: 3rem;
+}
+
+.workshop{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 18rem;
+    background-color: #A26E4B;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.workshop img{
+    width: 18rem;
+    margin-left: auto;
+}
+
+.textoWorkshop{
+    position: absolute;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoWorkshop p{
+    width: 40rem;
 }
