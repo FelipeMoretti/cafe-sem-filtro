@@ -1,31 +1,42 @@
-.footer{
-    display: flex;
-    align-items: center;
-    background-color: #341D10;
-    font-size: 12px;
-    width: auto;
-    height: 100px;
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #341d10;
+  font-size: 12px;
+  width: auto;
+  height: 180px;
 }
 
-.logo{
-    width: 120px;
-}
-
-.redesSociais{
+.imagens{
     display: flex;
-    margin-left: auto;
-    align-items: center;
-    justify-self: center;
     gap: 10px;
-    cursor: pointer;
+    margin: 15px;
 }
 
-.circle{
-    background-color: #E2DBB5;
-    border-radius: 50%;
+.logoXicara {
+  width: 120px;
+  cursor: pointer;
 }
 
-.itemRedeSocial{
-    width: 60px;
-    padding: 8px;
+.logoTexto {
+  width: 200px;
+  cursor: pointer;
+}
+
+.redesSociais {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.circle {
+  background-color: #e2dbb5;
+  border-radius: 50px;
+}
+
+.itemRedeSocial {
+  width: 80px;
+  padding: 8px;
 }

@@ -21,7 +21,7 @@ const navbar = ({ pageTitle }) => {
       </div>
       <div className={styles.itemNavbar}>
         <Link to="/menu">
-          <h1>Cardapio</h1>
+          <h1>Cardápio</h1>
         </Link>
       </div>
       <div className={styles.itemNavbar}>

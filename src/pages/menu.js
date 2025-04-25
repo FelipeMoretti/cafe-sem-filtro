@@ -3,7 +3,7 @@ import * as React from "react";
 const MenuPage = () => {
   return (
     <>
-      <h1>teste</h1>
+      <h1>menu page</h1>
     </>
   );
 };

@@ -9,11 +9,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Altura 100% no body e html */
 html, body {
   height: 100%;
+  background-color: #12141B;
 }
 
 /* Fonte base */
