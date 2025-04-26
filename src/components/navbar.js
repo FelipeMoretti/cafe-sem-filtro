@@ -4,6 +4,20 @@ import logoSimples from "../images/logo-xicara-cafe-claro.png";
 import * as styles from "../styles/navbar.module.css";
 
 const navbar = ({ pageTitle }) => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("sobre");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToWorkshop = () => {
+    const workshopSection = document.getElementById("workshop");
+    if (workshopSection) {
+      workshopSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className={styles.navbar}>
       <title>{pageTitle}</title>
@@ -25,10 +39,14 @@ const navbar = ({ pageTitle }) => {
         </Link>
       </div>
       <div className={styles.itemNavbar}>
-        <h1>Workshops</h1>
+        <button onClick={scrollToWorkshop}>
+          <h1>Workshops</h1>
+        </button>
       </div>
       <div className={styles.itemNavbarSobre}>
-        <h1>Sobre</h1>
+        <button onClick={scrollToAbout}>
+          <h1>Sobre</h1>
+        </button>
       </div>
     </div>
   );

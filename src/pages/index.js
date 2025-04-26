@@ -10,14 +10,21 @@ import cafeGelado from "../images/cafe-gelado.jpg";
 import cafeChocolate from "../images/cafe-com-chocolate.jpg";
 import frappe from "../images/frappe.jpg";
 import imagemInformacoes from "../images/lampada-com-folhas.jpg";
-import imagemWorkshop from "../images/fazendo-cafe.jpg"
+import imagemWorkshop from "../images/fazendo-cafe.jpg";
 
 const HomePage = () => {
+  const scrollToWorkshop = () => {
+    const workshopSection = document.getElementById("workshop");
+    if (workshopSection) {
+      workshopSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Navbar pageTitle="Café sem Filtro" />
       <main>
-        <div className={styles.hero}>
+        <section className={styles.hero}>
           <div className={styles.conteudoHero}>
             <div className={styles.cabecalho}>
               <div className={styles.textoHero}>
@@ -34,17 +41,17 @@ const HomePage = () => {
             </div>
             <div className={styles.botoes}>
               <Link to="/menu">
-              <button id="" className={styles.produtos}>
-                Produtos
-              </button>
+                <button id="" className={styles.produtos}>
+                  Produtos
+                </button>
               </Link>
-              <button id="" className={styles.experiencia}>
+              <button onClick={scrollToWorkshop} className={styles.experiencia}>
                 Experiência
               </button>
             </div>
           </div>
-        </div>
-        <div className={styles.maisVendidos}>
+        </section>
+        <section className={styles.maisVendidos}>
           <div className={styles.tituloMaisVendidos}>
             <h1>Mais Vendidos</h1>
           </div>
@@ -86,27 +93,46 @@ const HomePage = () => {
               </button>
             </div>
           </div>
-        </div>
-        <div className={styles.informacoes}>
-            <img src={imagemInformacoes} alt="Lâmpada com folhas" />
+        </section>
+        <section className={styles.informacoes}>
+          <img src={imagemInformacoes} alt="Lâmpada com folhas" />
           <div className={styles.textoInformacoes}>
-          <p>
-            Localização: Rua dos Grãos de Café - CEP 12345-678 <br /><br /> 
-            Horário defuncionamento: 06:00 - 19:00 de Seg a Sáb. <br /><br />
-            Telefone: (11) 99140-7988 - Whatsapp
-          </p>
+            <p>
+              Localização: Rua dos Grãos de Café - CEP 12345-678 <br />
+              <br />
+              Horário de funcionamento: 06:00 - 19:00 de Seg a Sáb. <br />
+              <br />
+              Telefone: (11) 99140-7988 - Whatsapp
+            </p>
           </div>
-        </div>
-        <div className={styles.sobre}>
+        </section>
+        <section id="sobre" className={styles.sobre}>
           <h1>Sobre Nós</h1>
-          <p>Na nossa cafeteria, cada xícara conta uma história. Usamos grãos selecionados de cultivo sustentável e comércio justo, preparados em métodos especiais como prensa francesa, siphon e cold brew para revelar nuances únicas de sabor. Quer ir além de provar? Participe dos nossos workshops de barista e degustações interativas, aprenda a arte do café e crie sua própria bebida. Venha viver uma experiência que respeita a origem do grão e celebra novos aromas em cada preparo.</p>
-        </div>
-        <div className={styles.workshop}>
+          <p>
+            Na nossa cafeteria, cada xícara conta uma história. Usamos grãos
+            selecionados de cultivo sustentável e comércio justo, preparados em
+            métodos especiais como prensa francesa, siphon e cold brew para
+            revelar nuances únicas de sabor. Quer ir além de provar? Participe
+            dos nossos workshops de barista e degustações interativas, aprenda a
+            arte do café e crie sua própria bebida. Venha viver uma experiência
+            que respeita a origem do grão e celebra novos aromas em cada
+            preparo.
+          </p>
+        </section>
+        <section id="workshop" className={styles.workshop}>
           <div className={styles.textoWorkshop}>
-            <p>Descubra o universo do café nos nossos workshops de barista. Em encontros práticos e descontraídos, você aprende a escolher grãos, dominar métodos como espresso, prensa francesa e cold brew, e a texturizar o leite para latte art de respeito. Saia preparado para criar bebidas incríveis em casa, entendendo cada etapa da moagem ao serviço e elevando sua rotina com cafés que contam história em cada gole.</p>
+            <p>
+              Descubra o universo do café nos nossos workshops de barista. Em
+              encontros práticos e descontraídos, você aprende a escolher grãos,
+              dominar métodos como espresso, prensa francesa e cold brew, e a
+              texturizar o leite para latte art de respeito. Saia preparado para
+              criar bebidas incríveis em casa, entendendo cada etapa da moagem
+              ao serviço e elevando sua rotina com cafés que contam história em
+              cada gole.
+            </p>
           </div>
           <img src={imagemWorkshop} alt="Homem fazendo café" />
-        </div>
+        </section>
       </main>
       <Footer />
     </>
