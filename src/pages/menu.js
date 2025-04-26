@@ -7,7 +7,7 @@ import imagemCardapio from "../images/GraosDeCafe-vertical.jpg";
 const MenuPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar pageTitle="Cardápio" />
       <main>
         <div className={styles.cardapio}>
           <div className={styles.cardapioControle}>

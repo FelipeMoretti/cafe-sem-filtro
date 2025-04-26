@@ -134,7 +134,7 @@ const HomePage = () => {
           <img src={imagemWorkshop} alt="Homem fazendo café" />
         </section>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 };
