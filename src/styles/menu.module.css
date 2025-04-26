@@ -1,0 +1,55 @@
+.cardapio{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.imagemCardapio img {
+    width: 40vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardapioControle{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.itensCardapio{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloCardapio h1{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #A26E4B;
+    border-bottom: 2px solid white;
+    margin-bottom: 2rem;
+}
+
+.tituloCardapio span{
+    font-size: 4rem;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item h2, h3{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.item h2{
+    color: #A26E4B;
+    margin-right: 8rem;
+}
+
+.itemDescricao{
+    font-size: 16px;
+}
