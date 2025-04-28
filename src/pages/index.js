@@ -1,28 +1,30 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 import "../../gatsby-browser";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import * as styles from "../styles/index.module.css";
 import logoCompleta from "../images/logo-cafe-sem-filtro-transparent.png";
-import cafeExpresso from "../images/cafe-expresso.png";
-import cafeGelado from "../images/cafe-gelado.jpg";
-import cafeChocolate from "../images/cafe-com-chocolate.jpg";
-import frappe from "../images/frappe.jpg";
-import imagemInformacoes from "../images/lampada-com-folhas.jpg";
-import imagemWorkshop from "../images/fazendo-cafe.jpg";
+import cafeExpresso from "../images/cafe-expresso.webp";
+import cafeGelado from "../images/cafe-gelado.webp";
+import cafeChocolate from "../images/cafe-com-chocolate.webp";
+import frappe from "../images/frappe.webp";
+import imagemInformacoes from "../images/lampada-com-folhas.webp";
+import imagemWorkshop from "../images/fazendo-cafe.webp";
 
 const HomePage = () => {
-  
   const scrollToWorkshop = () => {
     const workshopSection = document.getElementById("workshop");
     if (workshopSection) {
       workshopSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <>
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
       <Navbar pageTitle="Café sem Filtro" />
       <main>
         <section className={styles.hero}>
@@ -135,7 +137,7 @@ const HomePage = () => {
           <img src={imagemWorkshop} alt="Homem fazendo café" />
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 };

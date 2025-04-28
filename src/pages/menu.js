@@ -2,7 +2,7 @@ import * as React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import * as styles from "../styles/menu.module.css";
-import imagemCardapio from "../images/GraosDeCafe-vertical.jpg";
+import imagemCardapio from "../images/GraosDeCafe-vertical.webp";
 
 const MenuPage = () => {
   return (
