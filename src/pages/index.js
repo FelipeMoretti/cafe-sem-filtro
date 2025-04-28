@@ -13,6 +13,7 @@ import imagemInformacoes from "../images/lampada-com-folhas.jpg";
 import imagemWorkshop from "../images/fazendo-cafe.jpg";
 
 const HomePage = () => {
+  
   const scrollToWorkshop = () => {
     const workshopSection = document.getElementById("workshop");
     if (workshopSection) {
