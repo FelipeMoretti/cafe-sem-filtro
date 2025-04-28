@@ -8,7 +8,7 @@ main {
 .hero {
   position: relative;
   width: auto;
-  height: 45rem;
+  height: 100%;
   color: white;
   overflow: hidden;
 }
@@ -21,7 +21,7 @@ main {
   background-image: url("../images/GraosDeCafe-horizontal.webp");
   background-size: cover;
   background-position: center;
-  filter: brightness(0.5) blur(5px);
+  filter: brightness(0.5) blur(3px);
   z-index: 0;
 }
 
@@ -61,6 +61,7 @@ main {
 
 .botoes {
   margin-top: 6rem;
+  margin-bottom: 5rem;
   display: flex;
   gap: 5rem;
   font-size: 26px;

@@ -24,6 +24,12 @@ const HomePage = () => {
     <>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Café sem filtro é um site onde as pessoas encontrão um lugar tranquilo, 
+          tanto para aprender sobre a arte de fazer café quanto para apenas 
+          aproveitar a experiencia do mesmo"
+        />
       </Helmet>
       <Navbar pageTitle="Café sem Filtro" />
       <main>
